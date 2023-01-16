@@ -5,20 +5,6 @@
     padding: 0;
 }
 
-<<<<<<< HEAD
-#sidebar {
-    position: fixed;
-    width: 367px;
-    height: 100vh;  
-    background: #2D2626;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 25px;
-}
-
-#sidebar img {
-=======
 /*Construction Style*/
 #construction {
     height: 100vh;
@@ -43,20 +29,11 @@
   }
 
 .sidebar img {
->>>>>>> 0633b5a (Update Error)
     width: 255px;
     height: 255px;
     border-radius: 50%;
 }
 
-<<<<<<< HEAD
-main {
-    font-family: 'Montserrat', sans-serif;
-    position: absolute;
-    left: 500px;
-    display: flex;
-    flex-direction: column;
-=======
 @media screen and (max-width: 700px) {
     .sidebar {
       width: 100%;
@@ -78,7 +55,6 @@ main {
     font-family: 'Montserrat', sans-serif;
     position: absolute;
     margin-left: 310px;
->>>>>>> 0633b5a (Update Error)
     height: 100vh;
 }
 
