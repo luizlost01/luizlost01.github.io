@@ -5,6 +5,7 @@
     padding: 0;
 }
 
+<<<<<<< HEAD
 #sidebar {
     position: fixed;
     width: 367px;
@@ -17,17 +18,67 @@
 }
 
 #sidebar img {
+=======
+/*Construction Style*/
+#construction {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.sidebar {
+    margin: 0;
+    padding: 15px 1px;
+    width: 300px;
+    background: #2D2626;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+
+.sidebar img {
+>>>>>>> 0633b5a (Update Error)
     width: 255px;
     height: 255px;
     border-radius: 50%;
 }
 
+<<<<<<< HEAD
 main {
     font-family: 'Montserrat', sans-serif;
     position: absolute;
     left: 500px;
     display: flex;
     flex-direction: column;
+=======
+@media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+
+  }
+
+main {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    margin-left: 310px;
+>>>>>>> 0633b5a (Update Error)
     height: 100vh;
 }
 
