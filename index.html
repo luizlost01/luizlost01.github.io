@@ -10,41 +10,57 @@
 </head>
 
 <body>
-
+  <div class="container">
   <!-- Construction in progress notice -->
-
-    <div id="construction">
-      <h1>Em construção</h1>
-      <p>Este site esta em construção e pode haver bugs 
-        que podem afetar sua experiencia 
-        para continuar <p onclick="removenotice()">Clique aqui</p>
-      </p>
-    </div>
     
 
 
-  <div class="sidebar">
+  <aside class="sidebar">
     <img src="assets/photo.jpeg" alt="">
-  </div>
+
+    <div class="contact">
+      
+      <a href=""><img src="assets/svg/phone.svg" alt="phone icon"></a>
+      <a href=""><img src="assets/svg/map.svg" alt="map icon"></a>
+      <a href="https://github.com/luizlost01"><img src="assets/svg/github.svg" alt="github icon"></a>
+    </div>
+  </aside>
 
   <main>
-    <section id="perfil_infos">
+    <header>
+
+    <div id="perfil_infos">
       <h1>Luiz Eduardo</h1>
       <h2>Data de nascimento : 08/07/2006</h2>
       <h2>Endereço: Rio Grande/RS</h2>
       <h2>Celular: (55) 53 984215839</h2>
       <h2>Email: Luized_sparvoli@hotmail.com</h2>
       <h2>Ensino: Cursando o 2° ano do Ensino medio</h2>
-    </section>
-    <hr>
+    </div>
+
+
+    <div id="certificates">
+      <h1>Certificados:</h1>
+      <a href="https://www.efset.org/cert/QU4sDc"><p>Ingles Nivel B2 Acima de Intermediario - Efset</p></a> 
+      <a href="./assets/certs/GrasshopperFundamentosdecodificaçãoCertificate.pdf"><p>Fundamentals I - Grasshopper</p></a>
+      <a href="./assets/certs/GrasshopperFundamentosdeProgramaçãoIICertificate.pdf"><p>Fundamentals II - Grasshopper</p></a>
+      <a href="./assets/certs/discover-conectar-certificate.pdf"><p>Trilha Conectar - Rocketseat</p></a>
+      <a href="./assets/certs/GrasshopperUsodeumeditordecódigoCertificate.pdf"><p>Uso de um editor de código - Grasshopper</p></a>
+      <a href="https://lms.ev.org.br/mpls/Web/Lms/Student/PrintCertificateDialog.aspx?MYG2CzGqhAO4XK9MEFewA6IOhjoQuhO1"><p>HTML Básico - Fundação Bradesco</p></a>
+    </div>
+
+  </header>
+    
     <section id="about_me">
+      <hr>
       <h1>Sobre Mim</h1>
-      <p>Estudo programação desde os meus 13 anos, tenho uma paixão pela área,<br>
-        trabalho bem em equipe,<br>
-        sou comunicativo e aprendo novas tecnologias rapidamente,
+      <p>Estudo programação desde os meus 13 anos,<br> 
+        tenho uma paixão pela área, trabalho bem em equipe,<br>
+        sou comunicativo e aprendo novas tecnologias rapidamente,<br>
         estou sempre tentando evoluir cada dia </p>
-    </section>
     <hr>
+  </section>
+    
     <section id="skills">
       <h1>Habilidades de Desenvolvedor:</h1>
 
@@ -84,40 +100,37 @@
           <span class="dot"></span>
           <span class="dot"></span>
         </div>
+      </div>
 
-
-        <h1 id="skill_soft_title">Habilidades de Software</h1>
+        <h1 id="skill_soft_title">Habilidades de Software:</h1>
         <div id="skills_soft">
-          <h2>Figma</h2>
+          <div id="figma_soft">
+          <h2>Figma:</h2>
           <span class="dot" style="background-color: #3300FD;"></span>
           <span class="dot" style="background-color: #3300FD;"></span>
           <span class="dot" style="background-color: #3300FD;"></span>
           <span class="dot" style="background-color: #3300FD;"></span>
           <span class="dot"></span>
-          <h2>Excel</h2>
+        </div>
+          <div id="excel_soft">
+          <h2>Excel:</h2>
           <span class="dot" style="background-color: #3300FD;"></span>
           <span class="dot" style="background-color: #3300FD;"></span>
           <span class="dot"></span>
           <span class="dot"></span>
           <span class="dot"></span>
-          <h2>Slack</h2>
+        </div>
+          <div id="slack_soft">
+          <h2>Slack:</h2>
           <span class="dot" style="background-color: #3300FD;"></span>
           <span class="dot"></span>
           <span class="dot"></span>
         </div>
-    </section>
-
-
-    <section id="certificates">
-      <h1>certificados</h1>
-      <a href="https://www.efset.org/cert/QU4sDc"><p>Ingles Nivel B2 Acima de Intermediario - Efset</p></a> 
-      <a href="./assets/certs/GrasshopperFundamentosdecodificaçãoCertificate.pdf"><p>Fundamentals I - Grasshopper</p></a>
-      <a href="./assets/certs/GrasshopperFundamentosdeProgramaçãoIICertificate.pdf"><p>Fundamentals II - Grasshopper</p></a>
-      <a href="./assets/certs/discover-conectar-certificate.pdf"><p>Trilha Conectar - Rocketseat</p></a>
-      <a href="./assets/certs/GrasshopperUsodeumeditordecódigoCertificate.pdf"><p>Uso de um editor de código - Grasshopper</p></a>
-      <a href="https://lms.ev.org.br/mpls/Web/Lms/Student/PrintCertificateDialog.aspx?MYG2CzGqhAO4XK9MEFewA6IOhjoQuhO1"><p>HTML Básico - Fundação Bradesco</p></a>
-    </section>
+        </div>
+      </section>
+    
   </main>
+</div>
   <script src="scripts.js"></script>
 </body>
 
