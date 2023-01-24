@@ -6,56 +6,66 @@
 }
 
 /*Construction Style*/
-#construction {
+/* #construction {
     height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+} */
+
+body {
+    overflow: hidden;
 }
 
+.container {
+    font-family: 'MontSerrat', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+}
 
 
 
 .sidebar {
-    margin: 0;
-    padding: 15px 1px;
-    width: 300px;
-    background: #2D2626;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
+    background-color: #2d2d2d;
+    flex-grow: 0.02;
+    min-height: 100vh;
   }
 
 .sidebar img {
-    width: 255px;
-    height: 255px;
+    width: 16rem;
+    height: 16rem;
     border-radius: 50%;
 }
 
-@media screen and (max-width: 700px) {
-    .sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
+.contact {
+    display: flex;
+    flex-direction: column;
+}
 
-  }
-  
-  @media screen and (max-width: 400px) {
-    .sidebar a {
-      text-align: center;
-      float: none;
-    }
-
-  }
+.contact img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
 
 main {
+    margin: 20px;
     font-family: 'Montserrat', sans-serif;
-    position: absolute;
-    margin-left: 310px;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+hr {
+    width: 100%;
+    border: 0.5px solid;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
 }
 
 #perfil_infos {
@@ -68,11 +78,25 @@ main {
     font-style: light;
 }
 
+#certificates {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-grow: 1;
+}
+
 #about_me {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
+
+#about_me h1 {
+    padding: 20px;
+}
+
+/*Skills*/
 
 #skills h2 {
     display: flex;
@@ -80,16 +104,92 @@ main {
 }
 
 
+#skills {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#skills_lang {
+
+    display: flex;
+    flex: 1;
+    gap: 30px;
+}
+
 #skill_soft_title {
     margin: 35px 0;
 }
 
+#skills_soft {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    gap: 30px;
 
-.dot {
-    height: 25px;
-    width: 25px;
-    background-color: #D9D9D9;
-    border-radius: 50%;
-    display: inline-block;    
 }
 
+/*Others*/
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    display: inline-flex;  
+}
+
+
+
+@media screen and (max-width: 750px) {
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    main {
+        font-size: 10px;
+    }
+
+    #certificates {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+
+    .dot {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width 500) {
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    main {
+        display: flex;
+        gap: 0;
+        margin: 0;
+        font-size: 10px;
+    }
+
+    #certificates {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+
+    .dot {
+        display: flex;
+        flex-direction: column;
+    }
+}
