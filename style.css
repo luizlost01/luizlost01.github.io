@@ -18,7 +18,7 @@
 
 
 body {
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .container {
@@ -33,7 +33,6 @@ body {
 .sidebar {
     background-color: #2d2d2d;
     flex-grow: 0.02;
-    min-height: 100vh;
   }
 
 .sidebar img {
@@ -61,6 +60,10 @@ body {
 .titles_contact {
     display: flex;
     align-items: center;
+}
+
+.text_contact {
+    padding-left: 0.625rem;
 }
 
 main {
@@ -156,25 +159,46 @@ header {
 
 
 @media screen and (max-width: 750px) {
+
     header {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
     }
 
+    .container {
+        display: flex;
+        min-width: 100vw;
+        flex-direction: column;
+    } 
+
+    .sidebar {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 35vh;
+    }
+    
     .sidebar img {
         width: 12rem;
         height: 12rem;
+        border-radius: 50%;
     }
 
     .contact {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: end;
+        width: 100%;
     }
-    
+
     .contact img {
-        width: 1.5rem;
-        height: 1.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .text_contact {
+        display: none;
     }
 
     main {
@@ -183,8 +207,7 @@ header {
 
     #certificates {
         display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: space-between;
     }
 
 
@@ -202,19 +225,26 @@ header {
         flex-direction: column;
     }
 
+    .sidebar {
+        align-items: flex-start;
+    }
+
     .sidebar img {
+        display: flex;
         width: 10rem;
         height: 10rem;
     }
 
     .contact {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        gap: 0.5rem;
     }
     
     .contact img {
-        width: 0.5rem;
-        height: 0.5rem;
+        justify-content: center;
+        width: 2.5rem;
+        height: 2.5rem;
     }
 
     main {
